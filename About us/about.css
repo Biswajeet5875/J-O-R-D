@@ -2,11 +2,7 @@
 
 body {
   margin: 0;
-  background: linear-gradient(
-    to bottom right,
-    antiquewhite,
-    rgb(201, 247, 201)
-  );
+  background: white;
   color: #000000;
   font-family: "Inter", sans-serif;
   line-height: 1.6;

@@ -2,11 +2,7 @@ body::-webkit-scrollbar {
   display: none;
 }
 body {
-  background: linear-gradient(
-    to bottom right,
-    antiquewhite,
-    rgb(201, 247, 201)
-  );
+  background: white;
 }
 .card-section {
   width: 98%;
@@ -20,7 +16,7 @@ body {
 }
 
 .card {
-  background: linear-gradient(to bottom right, antiquewhite, white);
+  background: white;
 
   border: 1px solid #ddd;
   border-radius: 8px;
@@ -40,7 +36,7 @@ img {
   height: 275px;
   border-radius: 50%;
   padding: 10px;
-  background: rgba(224, 224, 224, 0.731);
+  background: rgb(246, 255, 245);
   border: 1px solid #390000;
 }
 

@@ -36,6 +36,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  filter: drop-shadow(5px 5px 20px #303030);
 }
 
 #achivement-sec {
