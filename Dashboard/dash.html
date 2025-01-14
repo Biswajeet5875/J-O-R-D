@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="dash.css" />
+    <link rel="stylesheet" href="btns.css" />
   </head>
   <body>
-    <main>
+    <main id="dashboard">
       <section id="dash-section1">
         <div id="section1-div1" class="avatar">
           <a href=""
@@ -40,10 +41,22 @@
       <section id="dash-section2">
         <div id="section2-div1">
           <article id="achivement-sec">
-            <div><span>5875</span> Users</div>
-            <div><span>5875</span> Supporters</div>
-            <div><span>5875</span> Captains</div>
-            <div><span>5875</span> Profit</div>
+            <div>
+              <span>5875</span>
+              <aside>Users</aside>
+            </div>
+            <div>
+              <span>5875</span>
+              <aside>Supporters</aside>
+            </div>
+            <div>
+              <span>5875</span>
+              <aside>Captains</aside>
+            </div>
+            <div>
+              <span>5875</span>
+              <aside>Profit</aside>
+            </div>
           </article>
         </div>
         <div id="section2-div2">
@@ -52,9 +65,18 @@
             style="height: 400px; width: 98%; margin: 10px"
           ></div>
         </div>
-        <div id="section2-div3">reviews</div>
+        <div id="section2-div3">
+          <div><button class="button btn1" role="button">About us</button></div>
+          <div><button class="button btn2" role="button">Contacts</button></div>
+          <div><button class="button btn3" role="button">Captains</button></div>
+          <div><button class="button btn4" role="button">Join us</button></div>
+          <div><button class="button btn5" role="button">Rate us</button></div>
+        </div>
       </section>
     </main>
+
+    <!-- about us section -->
+
     <script src="dash.js"></script>
     <script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
   </body>
