@@ -1,0 +1,28 @@
+{
+  "name": "j-o-r-d",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Biswajeet5875/J-O-R-D.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Biswajeet5875/J-O-R-D/issues"
+  },
+  "homepage": "https://github.com/Biswajeet5875/J-O-R-D#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "j-o-r-d": "file:",
+    "mysql2": "^3.12.0"
+  }
+}

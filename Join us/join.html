@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-container">
+            <form id="join-us-form" class="join-us-form">
+                <h2 class="title">Join Us</h2>
+
+                <!-- Input Fields -->
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" id="fullName" placeholder="Full Name" required>
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" id="email" placeholder="Email Address" required>
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-phone"></i>
+                    <input type="tel" id="phone" placeholder="Phone Number" required>
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-address-card"></i>
+                    <input type="text" id="address" placeholder="Address" required>
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-calendar-alt"></i>
+                    <input type="date" id="dob" required>
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-id-card"></i>
+                    <input type="text" id="aadhar" placeholder="Aadhar Number" required>
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-user-tie"></i>
+                    <input type="text" id="skills" placeholder="Skills" required>
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-briefcase"></i>
+                    <input type="text" id="previousEmployment" placeholder="Previous Employment" required>
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-graduation-cap"></i>
+                    <input type="text" id="highestEducation" placeholder="Highest Education" required>
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-file-alt"></i>
+                    <input type="text" id="experience" placeholder="Experience (in years)" required>
+                </div>
+                <input type="submit" value="Register" class="btn">
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Handle Join Us form submission
+        const joinUsForm = document.getElementById('join-us-form');
+        joinUsForm.addEventListener('submit', async (event) => {
+            event.preventDefault(); // Prevent default form submission
+
+            // Collect form data and create an object
+            const formData = {
+                fullName: document.getElementById('fullName').value,
+                email: document.getElementById('email').value,
+                phone: document.getElementById('phone').value,
+                address: document.getElementById('address').value,
+                dob: document.getElementById('dob').value,
+                aadhar: document.getElementById('aadhar').value,
+                skills: document.getElementById('skills').value,
+                previousEmployment: document.getElementById('previousEmployment').value,
+                highestEducation: document.getElementById('highestEducation').value,
+                experience: document.getElementById('experience').value
+            };
+
+            // Send data as JSON to the server
+            const response = await fetch('http://localhost:3000/join-us', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json', // Send JSON
+                },
+                body: JSON.stringify(formData), // Convert the data object to JSON
+            });
+
+            if (response.ok) {
+                // After successful submission, show a success message
+                alert('Join us details submitted successfully!');
+                window.location.href = '../Dashboard/dash.html'; // Redirect to a success page
+            } else {
+                const result = await response.json();
+                alert(result.message || 'Error during submission');
+            }
+        });
+    </script>
+</body>
+
+</html>
