@@ -1,115 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="dash.css" />
-    <link rel="stylesheet" href="btns.css" />
-  </head>
-  <body>
-    <main id="dashboard">
-      <section id="dash-section1">
-        <div id="section1-div1" class="avatar">
-          <a href=""
-            ><img src="../Assets/images/male.png" alt="" width="90%" />
-          </a>
-        </div>
-        <div id="section1-div2" class="avatar">
-          <a href=""
-            ><img src="../Assets/images/female.png" alt="" width="90%"
-          /></a>
-        </div>
-        <div id="section1-div3">
-          <div id="chartContainer" style="height: 100%; width: 100%"></div>
-        </div>
 
-        <div id="section1-div4">
-          <article id="achivement-sec">
-            <div>
-              <span>5875</span>
-              <aside>Users</aside>
-            </div>
-            <div>
-              <span>25875</span>
-              <aside>Supporters</aside>
-            </div>
-            <div>
-              <span>258</span>
-              <aside>Captains</aside>
-            </div>
-            <div>
-              <span>202003</span>
-              <aside>Profit</aside>
-            </div>
-          </article>
-        </div>
-      </section>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="dash.css" />
+  <link rel="stylesheet" href="btns.css" />
+</head>
 
-      <!-- section 2 -->
+<body>
+  <main id="dashboard">
+    <section id="dash-section1">
+      <div id="section1-div1" class="avatar">
+        <a href=""><img src="../Assets/images/male.png" alt="" width="90%" />
+        </a>
+      </div>
+      <div id="section1-div2" class="avatar">
+        <a href=""><img src="../Assets/images/female.png" alt="" width="90%" /></a>
+      </div>
+      <div id="section1-div3">
+        <div id="chartContainer" style="height: 100%; width: 100%"></div>
+      </div>
 
-      <section id="dash-section2">
-        <div id="section2-div1">
-          <a href=""
-            ><img src="../Assets/images/twitter.png" alt="" width="85%"
-          /></a>
-          <a href=""></a>
-          <a href=""></a>
-          <a href=""
-            ><img src="../Assets/images/facebook.png" alt="" width="95%"
-          /></a>
-
-          <a href=""
-            ><img src="../Assets/images/insta.png" alt="" width="95%"
-          /></a>
-          <a href=""></a>
-        </div>
-        <div id="section2-div2">
-          <div id="pieContainer" style="height: 98%; width: 98%"></div>
-        </div>
-        <div id="section2-div3">
+      <div id="section1-div4">
+        <article id="achivement-sec">
           <div>
-            <button
-              class="button btn1"
-              role="button"
-              onclick="navigateToAboutUs()"
-            >
-              About us
-            </button>
+            <span>5875</span>
+            <aside>Users</aside>
           </div>
           <div>
-            <button
-              class="button btn2"
-              role="button"
-              onclick="navigateToContacts()"
-            >
-              Contacts
-            </button>
+            <span>25875</span>
+            <aside>Supporters</aside>
           </div>
           <div>
-            <button
-              class="button btn3"
-              role="button"
-              onclick="navigateToCoaptains()"
-            >
-              Captains
-            </button>
+            <span>258</span>
+            <aside>Captains</aside>
           </div>
-          <div><button class="button btn4" role="button">Admin</button></div>
           <div>
-            <button class="button btn5" role="button">Grievance</button>
+            <span>202003</span>
+            <aside>Profit</aside>
           </div>
-          <div><button class="button btn6" role="button">Profile</button></div>
-          <div><button class="button btn7" role="button">Join us</button></div>
-          <div><button class="button btn8" role="button">Rate us</button></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- section 2 -->
+
+    <section id="dash-section2">
+      <div id="section2-div1">
+        <a href=""><img src="../Assets/images/twitter.png" alt="" width="85%" /></a>
+        <a href=""></a>
+        <a href=""></a>
+        <a href=""><img src="../Assets/images/facebook.png" alt="" width="95%" /></a>
+
+        <a href=""><img src="../Assets/images/insta.png" alt="" width="95%" /></a>
+        <a href=""></a>
+      </div>
+      <div id="section2-div2">
+        <div id="pieContainer" style="height: 98%; width: 98%"></div>
+      </div>
+      <div id="section2-div3">
+        <div>
+          <button class="button btn1" role="button" onclick="navigateToAboutUs()">
+            About us
+          </button>
         </div>
-      </section>
-    </main>
+        <div>
+          <button class="button btn2" role="button" onclick="navigateToContacts()">
+            Contacts
+          </button>
+        </div>
+        <div>
+          <button class="button btn3" role="button" onclick="navigateToCoaptains()">
+            Captains
+          </button>
+        </div>
+        <div><button class="button btn4" role="button">Admin</button></div>
+        <div>
+          <button class="button btn5" role="button">Grievance</button>
+        </div>
+        <div><button class="button btn6" role="button">Profile</button></div>
+        <div><button class="button btn7" role="button" onclick="navigateToJoinus()">Join us</button></div>
+        <div><button class="button btn8" role="button">Rate us</button></div>
+      </div>
+    </section>
+  </main>
 
-    <!-- about us section -->
+  <!-- about us section -->
 
-    <script src="dash.js"></script>
-    <script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
-    <script src="./navigation.js"></script>
-  </body>
+  <script src="dash.js"></script>
+  <script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
+  <script src="./navigation.js"></script>
+</body>
+
 </html>

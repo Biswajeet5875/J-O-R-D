@@ -7,3 +7,6 @@ function navigateToContacts() {
 function navigateToCoaptains() {
   window.location.href = "../Captains/captains.html";
 }
+function navigateToJoinus() {
+  window.location.href = "../Join us/join.html";
+}
